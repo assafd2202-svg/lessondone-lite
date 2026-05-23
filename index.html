@@ -64,11 +64,11 @@ body { font-family:'Heebo',Arial,sans-serif; background:var(--gray-50); color:va
 
 <div class="header">
   <div class="logo">Lesson<span>Done</span> Lite</div>
-  <p>מעקב תשלומים אוטומטי למורים פרטיים</p>
+  <p>מעקב תשלומים אוטומטי ותזכורות תשלום למורים פרטיים</p>
   <div class="selling">
     <div class="sp">📱 Bit/Paybox → נכנס לגיליון וצובע ירוק</div>
     <div class="sp">🔒 המידע שלך — רק שלך</div>
-    <div class="sp">📊 סיכום חודשי מהטלפון</div>
+    <div class="sp">🔔 תזכורות WhatsApp להורים</div>
   </div>
 </div>
 
@@ -129,7 +129,7 @@ body { font-family:'Heebo',Arial,sans-serif; background:var(--gray-50); color:va
       <div class="check-box" onclick="this.classList.toggle('checked')"></div>
       <div>
         <div class="check-title">גיליון Google Sheets — חובה</div>
-        <div class="check-desc">המערכת עובדת <strong>רק עם Google Sheets</strong> — לא עם Excel מקומי.<br><br>
+        <div class="check-desc"><div style="background:#fee2e2;border:2px solid #dc2626;border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:13px;font-weight:700;color:#991b1b;text-align:center;">🚫 המערכת עובדת רק עם Google Sheets — לא עם Excel מקומי</div>
         📁 <strong>יש לכם Excel מקומי?</strong> פתחו <strong>sheets.google.com</strong> ← <strong>+</strong> ← <strong>Import</strong> ← העלו את קובץ ה-Excel שלכם. Google תמיר אותו אוטומטית.<br><br>
         הגיליון צריך לכלול עמודות: <strong>שם תלמיד, שם משלם, מספר טלפון, סכום</strong>. המערכת מזהה את העמודות אוטומטית.<br><br>
         💡 <strong>שם משלם</strong> = מי שמשלם בפועל (הורה / תלמיד). אם התלמיד משלם בעצמו — כתבו את שמו פעמיים.<br>
@@ -285,7 +285,7 @@ body { font-family:'Heebo',Arial,sans-serif; background:var(--gray-50); color:va
       <div class="guide-icon">📊</div>
       <div>
         <div class="guide-title">סיכום חודשי</div>
-        <div class="guide-desc">בלינק הסיכום: כמה התקבל, כמה חוב, טבלת תלמידים. <strong>עובד גם מהטלפון!</strong></div>
+        <div class="guide-desc">סיכום כמה התקבל, כמה חוב, וטבלת תלמידים. נגיש דרך תפריט <strong>💰 LessonDone Lite ← 📊 סיכום חודשי</strong> — יפתח לינק בחלון חדש.</div>
       </div>
     </div>
 
@@ -364,6 +364,12 @@ body { font-family:'Heebo',Arial,sans-serif; background:var(--gray-50); color:va
         הזינו אימייל וסיסמה ← אשרו את המייל שנשלח אליכם
       </div>
       <div class="tip">💡 תקופת ניסיון חינמית — לא צריך כרטיס אשראי להתחלה.</div>
+      <div style="background:#fefce8;border:1px solid #fde68a;border-radius:8px;padding:10px 12px;font-size:11px;color:#713f12;margin-top:8px;line-height:1.8;">
+        <strong>📋 תוכניות GREEN API:</strong><br>
+        • <strong>Developer (חינמי)</strong> — שליחת תזכורות לעד <strong>3 מספרי טלפון שונים בחודש</strong> בלבד. מתאים אם יש לכם מעט הורים.<br>
+        • <strong>Start (~$12/חודש)</strong> — ללא הגבלת מספרים. מתאים למורה עם תלמידים רבים.<br>
+        ניתן להתחיל בחינמי ולשדרג בכל עת.
+      </div>
     </div>
 
     <div class="wa-step" id="wa2">
@@ -494,7 +500,13 @@ body { font-family:'Heebo',Arial,sans-serif; background:var(--gray-50); color:va
 
 </div>
 
-<div class="footer">LessonDone Lite V1 · 2026 · חודש ראשון חינם · ₪29/חודש</div>
+<div class="footer">
+  LessonDone Lite V1 · 2026 · חודש ראשון חינם · ₪29/חודש<br><br>
+  <a href="https://wa.me/972524470034?text=שלום,%20אני%20מעוניין/ת%20ב-LessonDone%20Lite" 
+     style="display:inline-block;background:#25d366;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:13px;">
+    💬 צור/י קשר ב-WhatsApp
+  </a>
+</div>
 
 <script>
 function showPanel(id) {
